@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(130deg, #5c0a75, #fb6f92);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.todo{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 70%;
+    height: 25%;
+    
+
+}
+h2{
+    padding: 10px;
+}
+i{
+    /* background-color: rgb(2, 3, 3); */
+    margin: 10px;
+}
+.row{
+    margin: 0px auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5ccd7;
+    border-radius: 20px;
+    width: 70%;
+
+}
+input{
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    flex: 1;
+    background: transparent;
+   border: none;
+   outline: none;
+
+}
+button{
+    padding: 4px;
+    border-radius: 20px;
+   border: none;
+   background-color: #ac0b96;
+   width: 20%;
+   color: white;
+   cursor: pointer;
+   font-size: 16px;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://static.thenounproject.com/png/60248-200.png);
+    top: 4px;
+    left: -42px;
+    background-position: center;
+    background-size: cover;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+   
+}
+ul li.checked::before{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/815/673/small/transparent-circle-icon-background-png.png);
+    height: 28px;
+    width: 28px;
+    
+}
